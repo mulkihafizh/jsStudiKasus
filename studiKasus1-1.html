@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Studi Kasus 1-1</h1>
+    <h1>Buka Console</h1>
+
+    <script >
+        for(let i=10; i > 0; i--){
+            console.log(i);
+        }
+
+        
+
+        function cekUmur(umur){
+            return (umur > 6 ? "Harus Bayar Tiket" : "Tidak Perlu Bayar Tiket");
+        }
+        console.log(cekUmur(6));
+
+        let hari="senin";
+
+        switch (hari){
+            case "senin": 
+                alert("Jam kerja dimulai dari pukul 07.30 sampai 16.30 dengan penanggung jawab piket : Anisa");
+                break;
+            case "selasa": 
+                alert("Jam kerja dimulai dari pukul 08.00 sampai 17.00 dengan penanggung jawab piket : Berlyn");
+                break;
+            case "rabu": 
+                alert("Jam kerja dimulai dari pukul 07.30 sampai 17.00 dengan penanggung jawab piket : Dani");
+                break;
+            case"kamis": 
+                alert("Jam kerja dimulai dari pukul 07.30 sampai 17.00 dengan penanggung jawab piket : Fema");
+                break;
+            case "jumat": 
+                alert("Jam kerja dimulai dari pukul 07.30 sampai 16.45 dengan penanggung jawab piket : Karina");
+                break;
+            default: 
+                alert("Hari Libur");
+                break;
+        }
+
+        for(let a=1; a<=20;a++){
+            if(a%2==0){
+                console.log(`${a} bilangan genap`)
+            }else{
+                console.log(`${a} bilangan ganjil`)
+            }
+        }
+
+
+            
+    </script>
+</body>
+</html>

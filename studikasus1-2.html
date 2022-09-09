@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Studi Kasus 1-2</h1>
+    <h1>Buka Console</h1>
+
+
+    <script>
+
+        const siswa={
+            nama:"Mulki Hafizh",
+            nis:12108557,
+            rombel:"PPLG XI-5",
+            rayon:"Cibedug 1",
+
+
+            perkenalan:function (){
+                return `${this.nama} ${this.nis} ${this.rombel} ${this.rayon}`
+            }
+        }
+
+        console.log(siswa.perkenalan());
+
+
+        const number=[3,9,19,12,14,15,20,22,23,25,28,30];
+
+        for(let i=1;i < number.length;i++){
+            if(number[i]%5==0){
+                console.log(number[i])
+            }
+        }
+
+        
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus 01-03</title>
+</head>
+<body>
+    <h1>Studi Kasus 1-3</h1>
+    <h1>Buka Console</h1>
+    <hr>
+    <h1>Beli Tiket</h1>
+    <button onclick="beliTiket()">Beli</button>
+
+
+    <script>
+        function sisaBagi(x,y){
+            let sisa=x%y;
+            return sisa;
+        }
+
+        console.log(`Sisa Bagi = ${sisaBagi(5,2)}`);
+
+
+        function cekArgs(a,b){
+            if(a==b && a > b){
+                return alert("Nilai " + a + " sama dengan nilai " + b);
+            }else if(a!==b && a > b){
+                return alert("Nilai " + a + " tidak sama dengan nilai " + b + " , Nilai " + a + " lebih besar dari " + b);
+            }else if(a!==b && a < b){
+                return alert("Nilai " + a + " tidak sama dengan nilai " + b + " , Nilai " + a + " lebih kecil dari " + b);
+            }
+        }
+
+        console.log(cekArgs(4,5))
+
+
+        function beliTiket(){
+            let beli = confirm("Apakah anda yakin untuk meneruskan proses pembelian");
+            if(beli){
+                let total=prompt("Masukkan jumlah yang akan di beli", "");
+                let konfirmasi=confirm(`Total yang harus dibayar adalah ${total*35000} anda yakin?`)
+                if(konfirmasi){
+                    alert("Pembelian telah di proses");
+                }else{
+                    alert("Batal Memesan Tiket")
+                }
+            }else{
+                alert("Proses pembelian tiket tidak dapat dilanjutkan");
+            }
+        }
+
+
+    </script>
+</body>
+</html>
